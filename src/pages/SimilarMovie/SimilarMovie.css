@@ -1,0 +1,64 @@
+ .movie-card {
+  position: relative;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 160%;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+}
+.movie-list {
+  width: 100%;
+}
+.overlay .icon {
+  color: #ffffff;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  background: transparent;
+  border: none;
+  
+}
+
+.overlay {
+  position: absolute;
+  padding: 0 1rem 1rem 1rem;
+  bottom: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.64);
+  
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.movie-card:hover .overlay {
+  opacity: 1;
+}
+.card__title {
+  font-weight: 900;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.card__runtime {
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.card__rating {
+  float: right;
+}
+
+.card__description {
+  font-style: italic;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+} 

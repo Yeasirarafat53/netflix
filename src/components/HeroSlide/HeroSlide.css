@@ -1,0 +1,150 @@
+.hero-slide {
+  margin-bottom: 3rem;
+}
+.hero-slide__item {
+  padding: 9rem 0;
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-slide__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.hero-slide__item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to top, #0f0f0f, rgba(0, 0, 0, 0));
+}
+
+.hero-slide__item__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero-slide__item__content__info {
+  width: 55%;
+  padding: 0 3rem;
+  position: relative;
+}
+.hero-slide__item__content__info .title {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.hero-slide__item__content__info .overview {
+  font-weight: 700;
+}
+
+.posterImage__runtime {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.posterImage__rating {
+  margin-left: 3rem;
+}
+
+.btns {
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 1rem;
+}
+.btn {
+  border: 4px solid transparent;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 30px;
+  padding: 0.5rem 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow: 0px 0px 7px 8px #ff00004d;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.hero-slide__item__content__poster {
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+/* img {
+    max-width: 100%;
+} */
+.hero-slide__item__content__poster img {
+  width: 400px;
+  border-radius: 30px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  transform: scale(1);
+  transition: transform 0.7s ease;
+}
+
+
+
+@media only screen and (max-width: 1024px){
+.hero-slide__item__content__info {
+    width: 100%;
+}
+}
+
+@media only screen and (max-width: 1024px){
+
+.hero-slide__item {
+    height: 77vh;
+}
+.hero-slide__item__content__info .title {
+    font-size: 2rem;
+    
+}
+.hero-slide__item__content__poster img {
+  display:none;
+}
+.posterImage__runtime {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.hero-slide__item__content__info .overview {
+    font-size: 15px;
+}
+.btn{
+    padding:5px 13px;
+    font-size: 1rem;
+}
+
+.hero-slide__item__content__info {
+    
+    padding: 0px 0.7rem;
+    position: relative;
+}
+
+}
+
+
+
+/* examples/custom-styling.css */
+overlay {
+  background: rgba(36, 123, 160, 0.225);
+}
+.customModal {
+  background: #02ff52;
+  max-width: 500px;
+  width: 100%;
+}
+
+
+
